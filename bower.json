@@ -1,0 +1,8 @@
+{
+  "name": "Fifty Shades Generator",
+  "version": "2.0.0",
+  "dependencies": {
+    "bootstrap-sass": "~3.3.3",
+    "github-fork-ribbon-css": "~0.1.1"
+  }
+}

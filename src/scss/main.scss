@@ -1,0 +1,85 @@
+$body-bg: #173b53;
+$text-color: #ffffff;
+
+$font-family-sans-serif: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-family-monospace: "Courier New", Courier, monospace;
+$font-size-base: 14px;
+
+$line-height-base: 1.785714286;
+$line-height-computed:    floor(($font-size-base * $line-height-base));
+
+$link-color: #509ed1;
+
+$headings-font-family: $font-family-monospace;
+$headings-font-weight: bold;
+
+$grid-gutter-width: $line-height-computed * 2;
+
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "grid"; // We don't want the large desktop grid, so we're overriding this file.
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+$grey: #bcbcbc;
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: rgb(13,18,22);
+	background: -moz-linear-gradient(315deg, rgba(13,18,22,1) 0%, rgba(23,59,83,1) 100%);
+	background: -webkit-gradient(linear, right bottom, left top, color-stop(0%,rgba(13,18,22,1)), color-stop(100%,rgba(23,59,83,1)));
+	background: -webkit-linear-gradient(315deg, rgba(13,18,22,1) 0%,rgba(23,59,83,1) 100%);
+	background: -o-linear-gradient(315deg, rgba(13,18,22,1) 0%,rgba(23,59,83,1) 100%);
+	background: -ms-linear-gradient(315deg, rgba(13,18,22,1) 0%,rgba(23,59,83,1) 100%);
+	background: linear-gradient(315deg, rgba(13,18,22,1) 0%,rgba(23,59,83,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1216', endColorstr='#173b53',GradientType=1 );
+	
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+	float: left;
+	text-align: right;
+	margin-bottom: $line-height-computed;
+
+	.grey {
+		color: $grey;
+	}
+}
+
+blockquote {
+	text-align: justify;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	line-height: $line-height-computed * 1.25;
+	font-family: $font-family-serif;
+}
+
+.quotation-mark {
+	color: $grey;
+	font-size: 300%;
+}
+
+#video {
+	margin-bottom: $line-height-computed / 2;
+}
+
+@media (max-width: $screen-sm-min) {
+	.github-fork-ribbon-wrapper {
+		display: none;
+	}
+}
