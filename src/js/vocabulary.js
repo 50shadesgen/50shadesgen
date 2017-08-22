@@ -207,6 +207,7 @@ var vocab = {
         ],
         "mouth" : [
             "cake hole",
+            "laryngina",
             "mouth",
             "throat"
         ],
